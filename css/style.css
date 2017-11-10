@@ -15,6 +15,7 @@
 html {
   font-family: 'Libre Barcode 39 Text', cursive;
   /*"fantasy", "Bradley Hand", "Comic Sans MS", "Monospace" ;*/
+
 }
 
 body {
@@ -43,5 +44,56 @@ body {
   justify-content: center;
   color:orange; /*Colors are inherited from parent to child*/
   font-size: 30px;
+  transition: 0.5s; /*This takes a half second for this image to transition*/
+  text-shadow: 2px 2px red;
+}
+
+@media(max-width: 700px) {
+  /*Nested in side of this code block is only gong to effect when the browser width is smaller than 700px. This is like an if statement. This is like a mini style sheet inside of your stylesheet*/
+
+  .landing {
+    background-image: url(../images/small_graffiti-berlin-wall-wall-trabi.jpg);
+    background-position: bottom; /*Focuses the positioning to the bottom of the image*/
+    font-size:40px;
+    transition: 0.5s; /*This takes a half second for this image to transition*/
+    /*font-family: "Helvetica";*/
+  }
 
 }
+
+  .row {
+    display: flex;
+  }
+
+  .col-3 {
+    width: 100%;
+  }
+
+@media (max-width:700px;) {
+  .row{
+    display: block;
+  }
+}
+
+@media (max-width: 500px) {
+
+  .landing{
+    font-size: 2rem;
+    transition: 0.5s; /*This takes a half second for this image to transition*/
+    display:box;
+
+  }
+
+}
+
+
+
+/*.row{
+  display: flex;
+  font-family: "arial";
+
+}
+
+.col-3{
+  width: 33.33%
+}*/
