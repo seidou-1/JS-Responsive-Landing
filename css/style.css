@@ -1,10 +1,47 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Barcode+39+Text');
+
 * {box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-* {
+
+/** {
   border-style: solid;
-  border-width: 2px;
+  border-width: 1px;
   border-color: red;
+}*/
+
+html {
+  font-family: 'Libre Barcode 39 Text', cursive;
+  /*"fantasy", "Bradley Hand", "Comic Sans MS", "Monospace" ;*/
+}
+
+body {
+  padding-top: 50px;
+    /*When you put a fixed position on a document, it removes it from the flow of the document. So now you have to create some padding on the top so it can be displayed*/
+}
+/*html: 16px; */
+.top-nav {
+  background: teal;
+  height: 50px;
+  position:fixed;
+  top: 0;
+  left:0;
+  width: 100%;
+  /*margin-top: 40px;*/
+}
+
+.landing {
+  /*background-color: pink;*/
+  height: calc(100vh - 50px); /*This will give you the height of the viewport minus the height of the nav bar*/
+  background-image: url("../images/large_art-creative-metal-creativity (1).jpg"); /*The url will have to go up one level and go to the images folder since the images forlder is not adjacent to the*/
+  background-size: cover; /*This will stretch the image to cover the entireety of the background*/
+  background-position: center;
+  display: flex; /*This will make the h1 a flex item since it's a child of the parent that we chose to flex - the div class landing*/
+  align-items: center; /*justify-content deals with centering o the horizontal axis. align-items deals with centering on the vertical axis. Vertical centering will only work if you have a defined height. We did that on line 30*/
+  justify-content: center;
+  color:orange; /*Colors are inherited from parent to child*/
+  font-size: 30px;
+
 }
