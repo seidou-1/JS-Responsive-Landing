@@ -13,10 +13,22 @@
 }*/
 
 html {
-  font-family: 'Libre Barcode 39 Text', cursive;
+  /*font-family: 'Libre Barcode 39 Text', cursive;*/
   /*"fantasy", "Bradley Hand", "Comic Sans MS", "Monospace" ;*/
 
 }
+
+a{
+  text-decoration: none;
+}
+
+.menu{
+  margin-left: 10px;
+  display: block;
+  position: relative;
+
+}
+
 
 body {
   padding-top: 50px;
@@ -46,7 +58,11 @@ body {
   font-size: 30px;
   transition: 0.5s; /*This takes a half second for this image to transition*/
   text-shadow: 2px 2px red;
+  font-family: 'Libre Barcode 39 Text', cursive;
+  "fantasy", "Bradley Hand", "Comic Sans MS", "Monospace" ;
+
 }
+
 
 @media(max-width: 700px) {
   /*Nested in side of this code block is only gong to effect when the browser width is smaller than 700px. This is like an if statement. This is like a mini style sheet inside of your stylesheet*/
@@ -63,15 +79,28 @@ body {
 
   .row {
     display: flex;
+    /*flex-wrap: wrap;*/
+    margin-top: 30px;
+    background:orange;
+    color:white;
+    border:10px double teal;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .img{
+    border-radius: 20%;
   }
 
   .col-3 {
     width: 100%;
+    font-weight: bold;
   }
 
 @media (max-width:700px;) {
   .row{
     display: block;
+    /*font-family: "arial";*/
   }
 }
 
